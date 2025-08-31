@@ -1,0 +1,16 @@
+TAD - Tipo Abstrado de Dados
+Como todo dado precisa de uma variável para acondicioná-lo e um ou mais
+procedimentos para manipulá-lo, utiliza-se atualmente, com bastante frequência
+, a Classe da POO para descrever uma determina Estrutura de Dados.
+
+	. Os dados ficam nos atributos(ou campos), que são variáveis.
+	. Os procedimentos são os métodos.
+
+Logo, uma determinada Estrutura de Dados está acondicionada em uma classe
+
+A facilidade da classe em poder ser instanciada em mais de um objeto na mesma thread e cada
+objeto da estrutura, por mias complexo que seja, ser representado por uma vvaria´vel única de memória,
+utiliza-se o termo TAD, Tipo Abstrato de Dado, ou seja, "alguém" que encapsula e abstrai as operações internas.
+
+Aqui nesste curso iremos abordar as estruturas clásiicas. Pela combinação dessas
+estruturas pode-se chegar a estruturas mais complexas.
