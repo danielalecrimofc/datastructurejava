@@ -1,7 +1,0 @@
-Um vetor é um array de coluna (ou linha) única que armazena,
-em princípio, elementos do mesmo tipo, sendo que esse armazenamento
-é sequencial e os elementos podem ser acessados pelo nome da variável
-vetor acompanhado do índice que dá a posição do elemento no vetor(o primeiro
-elemento tem índice 0).
-
-
