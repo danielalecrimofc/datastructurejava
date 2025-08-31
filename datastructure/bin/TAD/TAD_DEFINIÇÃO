@@ -9,8 +9,7 @@ procedimentos para manipulá-lo, utiliza-se atualmente, com bastante frequência
 Logo, uma determinada Estrutura de Dados está acondicionada em uma classe
 
 A facilidade da classe em poder ser instanciada em mais de um objeto na mesma thread e cada
-objeto da estrutura, por mias complexo que seja, ser representado por uma vvaria´vel única de memória,
+objeto da estrutura, por mais complexo que seja, ser representado por uma variável única de memória,
 utiliza-se o termo TAD, Tipo Abstrato de Dado, ou seja, "alguém" que encapsula e abstrai as operações internas.
 
-Aqui nesste curso iremos abordar as estruturas clásiicas. Pela combinação dessas
-estruturas pode-se chegar a estruturas mais complexas.
+Pela combinação das estruturas clássicas pode-se chegar a estruturas mais complexas.
