@@ -180,7 +180,7 @@ public class VetorTAD {
 		
 		for(int i = 0; i < this.tamanho; i++) {
 			if (this.dados[i] == valor) {
-				res[o]++;
+				res[0]++;
 				res[res[0]] = i;
 				if(res[0] == nPrimeiros) {
 					break;
@@ -190,4 +190,69 @@ public class VetorTAD {
 		
 		return res;
 	}
+	
+	/**
+     * <br> ====================================================================
+     * <br> Armazenar na primeira posicao vaga no sentido 0->N
+     * <br> ====================================================================
+     *
+     * @param valor
+     * @return Vide Utils.printRet(...)
+     * @see
+     */
+	
+	public int armazenar1Vaga(int valor) {
+		if (!this.valorValido(valor)) {
+			return 1;
+		}
+		
+		for(int i = 0;i < this.tamanho; i++) {
+			if(this.dados[i] == this.vaga) {
+				int res = this.armazenar(valor, i);
+				return res;
+			}
+		}
+		
+		return -1;
+	}
+	
+
+    /**
+     * <br> ====================================================================
+     * <br> Remover da ultima posicao ocupada no sentido 0->N
+     * <br> ====================================================================
+     *
+     * @return Vide Utils.printRet(...)
+     */
+	
+	public int removerUltima() {
+		
+		for(int i = this.tamanho - 1; i>= 0;i--) {
+			if(this.dados[i] != this.vaga) {
+				return this.excluir(i);
+			}
+		}
+		
+		return -1;
+	}
+	
+	private boolean valorValido(int valor) {
+		return valor >= this.minimo && valor <= this.maximo;
+	}
+	
+	private boolean posicaoValida(int posicao) {
+		return posicao >= 0 && posicao < this.tamanho;
+	}
+	
+	private boolean podeRepetir() {
+		return this.repete == 1;
+	}
+	
+	public void limparVetor() {
+		for(int i = 0; i < tamanho; i++) {
+			this.dados[i] = this.vaga;
+		}
+	}
+	
+	
 }
