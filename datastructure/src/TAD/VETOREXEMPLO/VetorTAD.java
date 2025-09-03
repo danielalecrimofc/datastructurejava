@@ -43,7 +43,7 @@ public class VetorTAD {
      */
 	public int armazenar(int valor,int posicao) {
 		
-		if(!this.valorValido()) { // valor válido ?
+		if(!this.valorValido(valor)) { // valor válido ?
 			return 1;
 		}
 		
@@ -56,7 +56,7 @@ public class VetorTAD {
 		}
 		
 		if(!this.podeRepetir()) {
-			int[] existe = this.localizar(valor, nPrimeiros:0);
+			int[] existe = this.localizar(valor,0);
 			if(existe[0] > 0) {
 				return 4;
 			}
@@ -97,7 +97,7 @@ public class VetorTAD {
 		}
 		
 		if(!this.podeRepetir()) {
-			int[] existe = this.localizar(valor, nPrimeiross:0);
+			int[] existe = this.localizar(valor,0);
 			if(existe[0] > 0) {
 				return 4;
 			}
