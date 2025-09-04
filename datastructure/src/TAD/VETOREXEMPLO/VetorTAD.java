@@ -21,7 +21,7 @@ public class VetorTAD {
 	private final int minimo;
 	private final int maximo;
 	private final int vaga;
-	private final int repete; // 0 = nao repete; 1 = pode ter repetição
+	private final int repete; // 2 = nao repete; 1 = pode ter repetição
 	
 	
 	private int[] dados;
@@ -174,7 +174,7 @@ public class VetorTAD {
 			return res;
 		}
 		
-		if(this.repete == 0) {
+		if(this.repete == 2) {
 			nPrimeiros = 1;
 		}
 		
